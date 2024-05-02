@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Seaweed+Script&display=swap');
+
+:root{
+    --clr-neutral: #ccc;
+    --clr-neutral2: #F6F6F6;
+    --clr-bg-greydark: #DFDEE4;
+    --clr-plain-white: white;
+    --clr-black:#353343;
+    --clr-imgCont: #599440;
+
+
+    --fs-body:1rem;
+    --fs-bodyheader: 1.5rem;
+    --fs-button: 0.85rem;
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    background-color:var(--clr-plain-white);
+    height: 100vh;
+    width: 100vw;
+}
+.wrapper{
+    background-color: var(--clr-plain-white);
+    /* border: 1px solid yellow; */
+    height: 100%;
+    margin: auto;
+}
+
+.top-body{
+    height: 35%;
+    width: 100%;
+    background-color: var(--clr-plain-white);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.top-body h1{
+    font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 3px;
+  line-height: 0.5;
+  color: var(--clr-bg-greydark);
+}
+
+.top-body p{
+    color: pink;
+    font-family: "Seaweed Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.bottom-body{
+    height: 65%;
+    padding: 32px;
+}
+.data-container{
+    background-color: var(--clr-neutral2);
+    width: 90%;
+    height: 70%;
+    border-radius: 32px;
+    margin: auto;
+    padding: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.search-unit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* margin: 32px auto; */
+    /* position: absolute; */
+    /* margin-bottom: 0; */
+}
+
+.search-row{
+    width: 50%;
+    display: flex;
+    height: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.search-input{
+    flex: 1;
+    border: transparent;
+    outline: none;
+    background-color: var(--clr-neutral2);
+    padding: 8px 16px;
+}
+
+.search-row button{
+    border: transparent;
+    outline: none;
+    padding: 8px 16px;
+    background-color: var(--clr-neutral2);
+}
+
+.singleCard{
+    background-color: transparent;
+    padding: 16px;
+    
+}
+
+.inner-card{
+    cursor: pointer;
+    background-color:var(--clr-plain-white);
+    display: flex;
+    padding: 8px;
+    border-radius: 8px;
+    gap: 16px;
+    font-family: "Poppins", sans-serif;
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.03) 1.95px 1.95px 2.6px;
+}
+
+.image-container{
+    width: 60px;
+    background-color: var(--clr-imgCont);
+    color: var(--clr-plain-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: normal;
+    border-radius: 8px;
+    
+}
+.image-container p{
+    margin: 0;
+}
+
+.info-container{
+    color: var(--clr-black);
+    line-height: 1;
+}
+
+.fruit-name{
+    font-size: var(--fs-body);
+    font-weight: 400;
+}
+
+.fruit-family{
+    font-size: var(--fs-button);
+    color: var(--clr-bg-greydark);
+    font-weight: 300;
+    font-family: "poppins", sans-serif;
+} 
+
+.popupContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* height: 100px;
+    width: 100px; */
+    background-color: var(--clr-bg-greydark);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.popupContainer button{
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background-color: var(--clr-imgCont);
+    color: var(--clr-plain-white);
+    width: 50%;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+  }
